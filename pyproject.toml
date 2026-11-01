@@ -1,0 +1,22 @@
+[project]
+name = "dprime"
+version = "0.1.0"
+description = "Layer selection for difference-in-means steering with the discriminability index d'"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.4",
+    "transformers>=4.57",
+    "accelerate",
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "matplotlib",
+    "openai>=1.50",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["dprime"]
